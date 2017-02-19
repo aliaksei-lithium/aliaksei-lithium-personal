@@ -4,7 +4,7 @@ baseurl = "http://aliaksei-lithium.github.io/"
 languageCode = "en-us"
 author = "Aliaksei Zhynhiarouski"
 
-publishDir: "docs"
+publishDir = "docs"
 
 [social]
   github = "aliaksei-lithium"
