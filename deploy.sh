@@ -12,11 +12,15 @@ fi
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
 echo -e "\033[0;32mGo To Public folder...\033[0m"
+rm -rf public
 mkdir -p public
 pushd public
 
 echo -e "\033[0;32mUpdating static site content...\033[0m"
 git clone git@github.com:aliaksei-lithium/aliaksei-lithium.github.io.git .
+git config user.email "aliaksei.zhynhiarouski@gmail.com"
+git config user.name "Aliaksei Zhynhiarouski"
+git remote set-url origin git@personal.github.com:aliaksei-lithium/aliaksei-lithium.github.io.git
 
 echo -e "\033[0;32mReturning...\033[0m"
 popd
