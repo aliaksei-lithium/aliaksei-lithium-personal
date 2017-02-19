@@ -1,0 +1,23 @@
+.gradle
+/build/
+!gradle/wrapper/gradle-wrapper.jar
+application-zh.properties
+
+### IntelliJ IDEA
+.idea
+*.iws
+*.iml
+*.ipr
+
+
+#container deploy files
+credentials
+
+gradle/
+out/
+tomcat.8080/
+hs_err_pid*
+
+
+### HUGO
+public/

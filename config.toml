@@ -1,0 +1,11 @@
+title = "Aliaksei Zhynhiarouski"
+theme = "Detox"
+baseurl = "http://aliaksei-lithium.github.io/"
+languageCode = "en-us"
+author = "Aliaksei Zhynhiarouski"
+
+publishDir: "docs"
+
+[social]
+  github = "aliaksei-lithium"
+  twitter_name = "a_lithium"

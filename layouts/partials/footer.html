@@ -1,0 +1,12 @@
+<footer id="site-footer">
+    <div class="container">
+      {{ with .Site.Social.github }}
+      <a href="https://www.github.com/{{ . }}" class="site-footer__link" title="GitHub" target="_blank"><span class="tooltip"><i class="fa fa-github"></i></span></a>
+      {{ end }}
+      {{ with .Site.Social.twitter_name }}
+        <a href="https://www.twitter.com/{{ . }}" class="site-footer__link" title="Twitter" target="_blank"><span class="tooltip"><i class="fa fa-twitter"></i></span></a>
+      {{ end }}
+      <a href="{{ .Site.BaseURL }}index.xml" class="site-footer__link" title="Get the RSS feed"><span class="tooltip"><i class="fa fa-rss"></i></span></a>
+      <section>&copy; <a href="{{ .Site.BaseURL }}">{{ .Site.Params.author }}</a> 2017 | All rights reserved</section>
+    </div>
+</footer>
