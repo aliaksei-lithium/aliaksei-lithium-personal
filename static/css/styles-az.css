@@ -2,46 +2,65 @@
 a {
     transition: none;
 }
+
 a:hover {
     color: #00cccc;
     transition: none;
 }
+
 /*HEADER*/
 #site-header {
     padding: 3em 3em;
-    margin-bottom: 0;
-    max-width: 90em;
+    margin-bottom: 4rem;
     min-height: 10em;
     margin-left: auto;
     margin-right: auto;
     text-align: left;
-    /*TODO: responsive */
+}
+
+@media only screen and (max-width: 992px) {
+    #site-header {
+        padding: 1.5em 1.5em;
+        margin-bottom: 2rem !important;
+        min-height: 7em;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
 }
 
 .navigation {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap-reverse;
 }
 
 .navigation__title {
     flex: 1 0 auto;
 }
+
+.navigation__title a {
+    display: block;
+}
+
 .navigation__title_name {
+    line-height: 0.7;
     font-size: 2.5rem;
     font-weight: 900;
     font-family: "Montserrat", sans-serif;
-    line-height: 0.7;
     text-transform: uppercase;
 }
+
 .navigation__title_subname {
     font-size: 2rem;
-    line-height: 0.5;
+    line-height: 0.8;
     font-weight: 300;
 }
 
 .navigation__list {
     display: flex;
     flex: 1 0 auto;
+    padding-left: 0;
     list-style: none;
 }
 
@@ -57,13 +76,48 @@ a:hover {
     border-radius: 3px;
     color: #00cccc;
 }
+
+@media only screen and (min-width: 1240px) {
+
+}
+
+@media only screen and (max-width: 992px) {
+
+    .navigation__title {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navigation__title_name {
+        font-size: 2rem;
+    }
+
+    .navigation__title_subname {
+        font-size: 1.4rem;
+        line-height: 0.9;
+    }
+
+    .navigation__list {
+        justify-content: center;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+
+    .navigation__title_name {
+        line-height: 1;
+    }
+}
+
 /*INDEX*/
 .page-quote {
-    font-weight: 300;
-    line-height: 1.2;
     margin: 0 0 1em 0;
-    text-align: center;
+    line-height: 1.2;
     font-size: 2em;
+    font-weight: 300;
+    text-align: center;
 }
 
 .page-quote span {
@@ -75,9 +129,7 @@ html {
     position: relative;
     min-height: 100%;
 }
-body {
-    margin: 0 0 7em;
-}
+
 #site-footer {
     position: absolute;
     left: 0;
@@ -85,11 +137,18 @@ body {
     height: 7em;
     width: 100%;
 }
+
+body {
+    margin: 0 0 7em;
+}
+
 .site-footer__link {
     padding: 0 0.5em;
+    font-size: 2rem;
 }
+
 .site-footer__link:hover {
-    color: #00cccc !important;
     border-bottom: none !important;
+    color: #00cccc !important;
     text-decoration: none;
 }
