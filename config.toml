@@ -4,6 +4,10 @@ baseurl = "https://aliaksei-lithium.github.io/"
 languageCode = "en-us"
 author = "Aliaksei Zhynhiarouski"
 
+[params]
+  googleAnalytics = "UA-92309001-1"
+  disqus = "aliaksei-lithium"
+
 [social]
   github = "aliaksei-lithium"
   twitter_name = "a_lithium"
