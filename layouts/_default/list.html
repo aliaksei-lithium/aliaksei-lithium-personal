@@ -11,8 +11,8 @@
 {{ partial "header.html" . }}
 <main class="content" role="main">
 	<div class="container">
-        {{ range .Paginator.Pages }}
-        {{ .Render "li" }}
+        {{ range ( .Paginate (where .Data.Pages "Type" "post")).Pages }}
+            {{ .Render "li" }}
         {{ end }}
         {{ partial "pagination.html" . }}
 	</div>

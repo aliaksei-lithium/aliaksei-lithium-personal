@@ -1,5 +1,6 @@
 /*COMMON*/
 a {
+    color: #00cccc;
     transition: none;
 }
 
@@ -8,10 +9,14 @@ a:hover {
     transition: none;
 }
 
+p a:hover {
+    text-decoration: underline;
+}
+
 /*HEADER*/
 #site-header {
     padding: 3em 3em;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     min-height: 10em;
     margin-left: auto;
     margin-right: auto;
@@ -40,7 +45,17 @@ a:hover {
 }
 
 .navigation__title a {
+    color: #333;
     display: block;
+}
+.navigation__title a:hover {
+    color: #00cccc;
+}
+.navigation__item a {
+    color: #333;
+}
+.navigation__item a:hover {
+    color: #00cccc;
 }
 
 .navigation__title_name {
@@ -151,4 +166,10 @@ body {
     border-bottom: none !important;
     color: #00cccc !important;
     text-decoration: none;
+}
+
+/*ABOUT*/
+#about p {
+    font-size: 1.5em;
+    font-weight: 300;
 }
