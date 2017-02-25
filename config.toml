@@ -5,6 +5,8 @@ languageCode = "en-us"
 author = "Aliaksei Zhynhiarouski"
 
 [params]
+  author = "Aliaksei Zhynhiarouski"
+  description = "Personal site and blog"
   googleAnalytics = "UA-92309001-1"
   disqus = "aliaksei-lithium"
 
